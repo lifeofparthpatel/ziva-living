@@ -26,9 +26,14 @@ export const OurPgSection: React.FC = () => {
       <h1 className="text-5xl font-extrabold text-gray-900 text-center mb-6">
         {listing.name}
       </h1>
-      <p className="text-2xl text-purple-700 font-bold text-center mb-12">
-        {listing.currency} {listing.price.toLocaleString()} / month
-      </p>
+      {/* Updated to display multiple pricing options */}
+      <div className="text-center mb-12">
+        {listing.pricing.map((room, index) => (
+          <p key={index} className="text-2xl text-purple-700 font-bold mb-2">
+            {room.sharingCapacity} Sharing Room: {listing.currency} {room.pricePerPerson.toLocaleString()}
+          </p>
+        ))}
+      </div>
 
       {/* Images Section */}
       <section className="mb-16">
@@ -67,18 +72,13 @@ export const OurPgSection: React.FC = () => {
           </li>
           <li className="flex flex-col items-start bg-white p-6 rounded-xl shadow-md border border-gray-200">
             <span className="mb-2 text-3xl text-purple-500">🛏️</span>
-            <span className="font-semibold text-gray-800 text-xl mb-1">Bedrooms:</span>
-            <p className="text-gray-700 text-lg">{listing.bedrooms}</p>
+            <span className="font-semibold text-gray-800 text-xl mb-1">Rooms:</span> {/* Renamed from Bedrooms */}
+            <p className="text-gray-700 text-lg">{listing.rooms} and 4 sharing</p>
           </li>
           <li className="flex flex-col items-start bg-white p-6 rounded-xl shadow-md border border-gray-200">
             <span className="mb-2 text-3xl text-purple-500">🛁</span>
             <span className="font-semibold text-gray-800 text-xl mb-1">Bathrooms:</span>
-            <p className="text-gray-700 text-lg">{listing.bathrooms}</p>
-          </li>
-          <li className="flex flex-col items-start bg-white p-6 rounded-xl shadow-md border border-gray-200">
-            <span className="mb-2 text-3xl text-purple-500">📏</span>
-            <span className="font-semibold text-gray-800 text-xl mb-1">Area:</span>
-            <p className="text-gray-700 text-lg">{listing.areaSqFt} SqFt</p>
+            <p className="text-gray-700 text-lg">{listing.bathrooms} per room</p> {/* Updated description */}
           </li>
         </ul>
       </section>

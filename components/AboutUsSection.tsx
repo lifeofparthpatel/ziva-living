@@ -10,10 +10,11 @@ export const AboutUsSection: React.FC = () => {
         About {APP_NAME}
       </h1>
       <p className="text-center text-xl text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">
-        At {APP_NAME}, we are dedicated to providing a secure, comfortable, and supportive living environment for girls seeking paying guest accommodations. Our mission is to offer a trusted home-away-from-home, ensuring a hassle-free and enriching stay in Pune.
+        At {APP_NAME}, we are dedicated to providing a secure, comfortable, and supportive living environment for girls seeking paying guest accommodations. Our mission is to offer a trusted home-away-from-home, ensuring a hassle-free and enriching stay in Science city, Ahmedabad.
       </p>
 
       {/* Our Story Section */}
+      {/*
       <section className="bg-white p-8 rounded-xl shadow-xl mb-12">
         <h2 className="text-4xl font-bold text-center text-gray-900 mb-8">Our Story</h2>
         <div className="flex flex-col md:flex-row items-center gap-8">
@@ -32,18 +33,13 @@ export const AboutUsSection: React.FC = () => {
           </div>
         </div>
       </section>
+      */}
 
       {/* Our Values Section */}
+      {/* This section has been removed as per user request.
       <section className="py-12">
         <h2 className="text-4xl font-bold text-center text-gray-900 mb-8">Our Values</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-          <div className="p-8 bg-white rounded-xl shadow-lg">
-            <div className="text-purple-600 text-5xl mb-4">✅</div>
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Trust & Transparency</h3>
-            <p className="text-gray-700">
-              We ensure all information about our PG is accurate and transparent, building trust with our guests.
-            </p>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center max-w-2xl mx-auto">
           <div className="p-8 bg-white rounded-xl shadow-lg">
             <div className="text-purple-600 text-5xl mb-4">🛡️</div>
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Safety & Security</h3>
@@ -60,30 +56,27 @@ export const AboutUsSection: React.FC = () => {
           </div>
         </div>
       </section>
+      */}
 
       {/* Meet the Team (Placeholder) */}
       <section className="bg-white p-8 rounded-xl shadow-xl my-12 text-center">
         <h2 className="text-4xl font-bold text-gray-900 mb-8">Meet Our Team</h2>
         <div className="flex flex-wrap justify-center gap-8">
           <div className="w-48 text-center">
-            <img src="https://picsum.photos/id/1005/150/150" alt="Aditi Singh" className="rounded-full w-32 h-32 object-cover mx-auto mb-3 shadow-md" />
-            <p className="font-semibold text-lg text-gray-900">Aditi Singh</p>
+            <img src="https://picsum.photos/id/1005/150/150" alt="Divya Chandnani" className="rounded-full w-32 h-32 object-cover mx-auto mb-3 shadow-md" />
+            <p className="font-semibold text-lg text-gray-900">Divya Chandnani</p>
             <p className="text-purple-600 text-sm">PG Manager</p>
           </div>
           <div className="w-48 text-center">
-            <img src="https://picsum.photos/id/1011/150/150" alt="Pooja Devi" className="rounded-full w-32 h-32 object-cover mx-auto mb-3 shadow-md" />
-            <p className="font-semibold text-lg text-gray-900">Pooja Devi</p>
-            <p className="text-purple-600 text-sm">Guest Support</p>
-          </div>
-          <div className="w-48 text-center">
-            <img src="https://picsum.photos/id/1012/150/150" alt="Sana Khan" className="rounded-full w-32 h-32 object-cover mx-auto mb-3 shadow-md" />
-            <p className="font-semibold text-lg text-gray-900">Sana Khan</p>
-            <p className="text-purple-600 text-sm">Facilities Lead</p>
+            <img src="https://picsum.photos/id/1011/150/150" alt="Kaveri Patel" className="rounded-full w-32 h-32 object-cover mx-auto mb-3 shadow-md" />
+            <p className="font-semibold text-lg text-gray-900">Kaveri Patel</p>
+            <p className="text-purple-600 text-sm">PG Manager</p>
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
+      {/* This section has been removed as per user request.
       <section className="py-12">
         <h2 className="text-4xl font-bold text-center text-gray-900 mb-8">Frequently Asked Questions</h2>
         <div className="max-w-3xl mx-auto space-y-4">
@@ -113,6 +106,7 @@ export const AboutUsSection: React.FC = () => {
           </details>
         </div>
       </section>
+      */}
     </>
   );
 };

@@ -16,15 +16,21 @@ export interface Rules {
   description: string;
 }
 
+export interface RoomPricing {
+  sharingCapacity: number; // e.g., 3, 4
+  pricePerPerson: number; // e.g., 15000, 13000
+}
+
 export interface Listing {
   id: string;
   name: string;
   images: string[];
-  price: number; // per month
+  // price: number; // per month - Removed
   currency: string;
+  pricing: RoomPricing[]; // New field for multiple pricing options
   location: Location;
   description: string;
-  bedrooms: number;
+  rooms: number; // Renamed from 'bedrooms'
   bathrooms: number;
   areaSqFt: number;
   amenities: Amenity[];

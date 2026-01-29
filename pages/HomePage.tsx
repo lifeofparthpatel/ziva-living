@@ -6,7 +6,7 @@ import { testimonials } from '../data/testimonials';
 import { APP_NAME } from '../constants';
 import { OurPgSection } from '../components/OurPgSection';
 import { AboutUsSection } from '../components/AboutUsSection';
-import { ContactSection } from '../components/ContactSection';
+// import { ContactSection } from '../components/ContactSection'; // Removed
 
 export const HomePage: React.FC = () => {
   const location = useLocation();
@@ -50,6 +50,14 @@ export const HomePage: React.FC = () => {
                 Our PG offers top-notch security features for your peace of mind, with 24/7 surveillance and on-site staff.
               </p>
             </div>
+            {/* Moved 'Trust & Transparency' here to the second position */}
+            <div className="p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="text-purple-600 text-5xl mb-4">✅</div>
+              <h3 className="text-xl font-semibold mb-3 text-gray-900">Trust & Transparency</h3>
+              <p className="text-gray-700">
+                We ensure all information about our PG is accurate and transparent, building trust with our guests.
+              </p>
+            </div>
             <div className="p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"> {/* Card background adjusted */}
               <div className="text-purple-600 text-5xl mb-4">🏠</div> {/* Icon color adjusted */}
               <h3 className="text-xl font-semibold mb-3 text-gray-900">Comfort & Convenience</h3> {/* Text color adjusted */}
@@ -57,6 +65,7 @@ export const HomePage: React.FC = () => {
                 Enjoy well-furnished rooms, essential amenities, and a prime location close to key facilities.
               </p>
             </div>
+            {/* Removed the third card (original Community & Support) to make room, will move it to a different position if needed or replace it*/}
             <div className="p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"> {/* Card background adjusted */}
               <div className="text-purple-600 text-5xl mb-4">💖</div> {/* Icon color adjusted */}
               <h3 className="text-xl font-semibold mb-3 text-gray-900">Community & Support</h3> {/* Text color adjusted */}
@@ -69,14 +78,16 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* Testimonials Section */}
+      {/*
       <section className="container mx-auto px-4 py-16">
-        <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">What Our Guests Say</h2> {/* Text color adjusted */}
+        <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">What Our Guests Say</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
             <TestimonialCard key={testimonial.id} testimonial={testimonial} />
           ))}
         </div>
       </section>
+      */}
 
       {/* About Us Section */}
       <section id="about-section" className="container mx-auto px-4 py-16 scroll-mt-20">
@@ -84,9 +95,11 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* Contact Section */}
+      {/*
       <section id="contact-section" className="container mx-auto px-4 py-16 scroll-mt-20">
         <ContactSection />
       </section>
+      */}
     </div>
   );
 };
