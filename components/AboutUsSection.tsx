@@ -10,7 +10,7 @@ export const AboutUsSection: React.FC = () => {
         About {APP_NAME}
       </h1>
       <p className="text-center text-xl text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">
-        At {APP_NAME}, we are dedicated to providing a secure, comfortable, and supportive living environment for girls seeking paying guest accommodations. Our mission is to offer a trusted home-away-from-home, ensuring a hassle-free and enriching stay in Science city, Ahmedabad.
+        At {APP_NAME}, we are dedicated to providing a secure, comfortable, and supportive living environment for girls seeking paying guest accommodations. Our mission is to offer a trusted home-away-from-home, ensuring a hassle-free and enriching stay in Science City, Ahmedabad.
       </p>
 
       {/* Our Story Section */}
@@ -63,14 +63,12 @@ export const AboutUsSection: React.FC = () => {
         <h2 className="text-4xl font-bold text-gray-900 mb-8">Meet Our Team</h2>
         <div className="flex flex-wrap justify-center gap-8">
           <div className="w-48 text-center">
-            <img src="https://picsum.photos/id/1005/150/150" alt="Divya Chandnani" className="rounded-full w-32 h-32 object-cover mx-auto mb-3 shadow-md" />
             <p className="font-semibold text-lg text-gray-900">Divya Chandnani</p>
-            <p className="text-purple-600 text-sm">PG Manager</p>
+            <p className="text-purple-600 text-sm">Owner</p>
           </div>
           <div className="w-48 text-center">
-            <img src="https://picsum.photos/id/1011/150/150" alt="Kaveri Patel" className="rounded-full w-32 h-32 object-cover mx-auto mb-3 shadow-md" />
             <p className="font-semibold text-lg text-gray-900">Kaveri Patel</p>
-            <p className="text-purple-600 text-sm">PG Manager</p>
+            <p className="text-purple-600 text-sm">Owner</p>
           </div>
         </div>
       </section>

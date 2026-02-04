@@ -15,19 +15,19 @@ export const listings: Listing[] = [
     // price: 13500, // Removed old price field
     currency: '₹',
     pricing: [ // New pricing structure
-      { sharingCapacity: 4, pricePerPerson: 13000 },
+      { sharingCapacity: 5, pricePerPerson: 13000 }, // Changed from 4 to 5 Sharing
       { sharingCapacity: 3, pricePerPerson: 15000 },
     ],
     location: {
-      address: 'ADDRESS______________',
+      address: 'B1, Block 1 & 2, First Floor, Galaxy Signature, Opp. Sukan Bunglows', // Updated full address
       city: 'Ahmedabad',
       state: 'Gujarat',
       zip: '380060',
     },
     description:
-      'Welcome to Ziva Living, your premier paying guest accommodation exclusively for girls in the bustling ADDRESS______________. We offer a sophisticated blend of comfort, security, and convenience, ideal for students and young professionals. Our tastefully furnished rooms, state-of-the-art kitchen facilities, and round-the-clock security ensure a worry-free and luxurious living experience. With a dedicated reception to assist you and a focus on fostering a supportive community, Ziva Living is designed to be your serene sanctuary in the city. Enjoy seamless access to major educational hubs, corporate parks, and recreational zones.',
-    rooms: 3, // Renamed from bedrooms
-    bathrooms: 1, // Updated to 2 (1 per room)
+      'Welcome to Ziva Living, your premier paying guest accommodation exclusively for girls in the bustling area of Science City, Ahmedabad. We offer a sophisticated blend of comfort, security, and convenience, ideal for students and young professionals. Our tastefully furnished rooms, state-of-the-art kitchen facilities, and round-the-clock security ensure a worry-free and luxurious living experience. With a dedicated reception to assist you and a focus on fostering a supportive community, Ziva Living is designed to be your serene sanctuary in the city. Enjoy seamless access to major educational hubs, corporate parks, and recreational zones.',
+    rooms: 3,
+    bathrooms: 1,
     areaSqFt: 650,
     amenities: [
       { icon: 'Wi-Fi', name: 'Free High-Speed Wi-Fi', description: 'Enjoy blazing-fast internet with 100 Mbps connectivity.' },
